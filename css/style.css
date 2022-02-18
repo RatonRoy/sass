@@ -1,18 +1,17 @@
-@import "reset";
-@import "colors";
-@import "fontSize";
-h1{
-	background-color: $backgroundColor;
-	color: $color;
-	text-align: center;
-	padding: 2rem 0;
-	letter-spacing: 0.25rem;
-	margin-bottom: 2rem;
-	font-size: $tittleSize;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-p{
-	font-size: $textSize;
+
+h1 {
+  color: red;
+  text-align: center;
+  padding: 2rem 0;
+  letter-spacing: 0.25rem;
 }
+
 /* ********************START
 Sass Import Syntax:
 @import filename;
@@ -56,3 +55,4 @@ body {
   color: $myBlue;
 }
 END*************************/
+/*# sourceMappingURL=style.css.map */
