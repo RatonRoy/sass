@@ -4,8 +4,61 @@
 	box-sizing: border-box;
 }
 h1{
-	color: red;
 	text-align: center;
 	padding: 2rem 0;
 	letter-spacing: 0.25rem;
+}
+/* ************************** START ************
+Sass Variables: 
+Variables are a way to store information that you can re-use later.
+With Sass, you can store information in variables, like:
+strings
+numbers
+colors
+booleans
+lists
+nulls
+Sass uses the $ symbol, followed by a name, to declare variables:
+
+Sass Variable Syntax:
+$variablename: value;
+
+*****************END **********************************/
+$backgroundColor: rgb(0, 19, 128);
+$textColor: white;
+$fontSize : 1.5rem; 
+$marginBottom : 1rem;
+h1{
+	background-color: $backgroundColor;
+	margin-bottom: $marginBottom;
+	color: $textColor;
+}
+p{
+	font-size: $fontSize;
+}
+/* ******************* START
+Nesting css support on sass 
+END ****************************/
+nav{
+	padding: 1rem;
+	margin-top: 2rem;
+	background-color: $backgroundColor;
+	ul{
+		width: 70vw;
+		margin: 0 auto;
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between; 
+		align-items: center;
+		li{
+			a{
+				text-decoration: none;
+				// display: inline-block; 
+				// padding: 0.5rem 0.8rem; 
+				color: $textColor;
+				// font-size: 1.rem;
+				// letter-spacing: 0.2rem;
+			}
+		}
+	}
 }
