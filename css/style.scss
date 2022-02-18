@@ -9,3 +9,37 @@ h1{
 	padding: 2rem 0;
 	letter-spacing: 0.25rem;
 }
+/* ****************************START
+@mixin name {
+  property: value;
+  property: value;
+  ...
+}
+Tip: A tip on hyphens and underscore in Sass: Hyphens and underscores are considered to be the same. This means that @mixin important-text { } and @mixin important_text { } are considered as the same mixin!
+Using a Mixin
+The @include directive is used to include a mixin.
+
+Sass @include mixin Syntax:
+
+selector {
+  @include mixin-name;
+}
+END***************************** */
+@mixin important-text(){
+	color: red;
+	font-size: 25px;
+	font-weight: bold;
+	border: 1px solid blue;
+  }
+@mixin globalText($color, $size, $borderWidth){
+	color: $color;
+	font-size: $size;
+	font-weight: bold;
+	border: $borderWidth solid red;
+  }
+  H1{
+	  @include important-text()
+  }
+  p{
+	  @include globalText(black, 1rem, 2px)
+  }
